@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 <!------------------ custom css file link  ------------------------->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stles.css">
 </head>
 <body>
 <header class="header">
@@ -68,7 +69,7 @@
                 <button type="submit"><i class="far fa-bookmark"></i> <span>save playlist</span></button>
             </form>
             <div class="thumb">
-                <img src="images/Zidnan.jpg" alt="">
+                <img src="images/1.jpg.jpg" alt="">
                 <span>10 videos</span>
             </div>
         </div>
@@ -89,6 +90,16 @@
         </div>
     </div>
 </section>
+
+<form id="linkForm">
+    <label for="linkInput">Link:</label>
+    <input type="url" id="linkInput" name="linkInput" placeholder="Tempelkan link di sini" required>
+    <button type="submit">Tampilkan</button>
+</form>
+
+<div id="embedContainer"></div>
+
+<script src="js/scripts.js"></script>
 
 <section class="playlist-videos">
     <h1 class="heading">playlist videos</h1>
