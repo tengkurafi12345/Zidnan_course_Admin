@@ -1,0 +1,225 @@
+/* Reset Margin & Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #6200ea; /* Ungu */
+    padding: 20px 0;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #FFD700; /* Warna saat hover */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1500x700') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    padding: 80px 20px; /* Tambahkan padding samping */
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #f4a300; /* Warna kontras */
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e68a00; /* Warna saat hover */
+}
+
+/* Features Section */
+.features {
+    background-color: #6200ea; /* Ungu */
+    padding: 50px 20px; /* Tambahkan padding samping */
+}
+
+.features .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #fff; /* Putih untuk kontras dengan latar belakang ungu */
+}
+
+.feature-item {
+    display: inline-block;
+    width: calc(33.333% - 40px); /* Mengurangi margin untuk 3 item per baris */
+    padding: 30px;
+    margin: 0 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #6200ea; /* Ungu */
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.feature-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .feature-item {
+        width: calc(50% - 40px); /* 2 item per baris pada layar sedang */
+        margin: 20px 0; /* Margin vertikal untuk tampilan yang lebih baik */
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-item {
+        width: calc(100% - 40px); 
+                /* 1 item per baris pada layar kecil */
+                margin: 20px 0; /* Margin vertikal untuk tampilan yang lebih baik */
+            }
+        
+            .hero h2 {
+                font-size: 2.5rem; /* Ukuran font lebih kecil pada layar kecil */
+            }
+        
+            .hero p {
+                font-size: 1rem; /* Ukuran font lebih kecil pada layar kecil */
+            }
+        
+            .hero .btn {
+                padding: 10px 20px; /* Padding lebih kecil pada tombol */
+                font-size: 0.9rem; /* Ukuran font lebih kecil pada tombol */
+            }
+        
+            header .container {
+                flex-direction: column; /* Susun ulang header menjadi kolom */
+                align-items: flex-start; /* Rata kiri */
+            }
+        
+            nav ul {
+                flex-direction: column; /* Susun ulang menu menjadi kolom */
+                margin-top: 10px; /* Tambahkan margin atas untuk jarak */
+            }
+        
+            nav ul li {
+                margin-left: 0; /* Hilangkan margin kiri pada item menu */
+                margin-bottom: 10px; /* Tambahkan margin bawah untuk jarak antar item */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 2rem; /* Ukuran font lebih kecil pada layar sangat kecil */
+            }
+        
+            .hero p {
+                font-size: 0.9rem; /* Ukuran font lebih kecil pada layar sangat kecil */
+            }
+        
+            header h1 {
+                font-size: 1.5rem; /* Ukuran font lebih kecil untuk judul header */
+            }
+        
+            footer p {
+                font-size: 0.9rem; /* Ukuran font lebih kecil untuk footer */
+            }
+        
+            .hero .btn {
+                padding: 8px 16px; /* Padding lebih kecil pada tombol */
+                font-size: 0.8rem; /* Ukuran font lebih kecil pada tombol */
+            }
+        }
+ 
+
+    
